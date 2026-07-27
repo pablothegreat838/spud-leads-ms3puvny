@@ -1,0 +1,14 @@
+name: Leaderboards
+version: 1.0-SNAPSHOT
+main: com.example.leaderboards.LeaderboardsPlugin
+api-version: 1.12
+commands:
+  setleader:
+    description: Sets up a leaderboard display.
+    usage: /setleader <type>
+    permission: leaderboards.set
+    permission-message: You do not have permission to set leaderboards.
+permissions:
+  leaderboards.set:
+    description: Allows setting up leaderboards.
+    default: op
